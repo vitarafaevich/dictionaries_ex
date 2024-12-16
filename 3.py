@@ -8,11 +8,11 @@ def dictionary(n):
 
 
 def antonyms(dct, wrd):
-    antonym = dct.get(wrd, wrd)
+    antonym = dct.get(wrd, wrd)    #get(key, value)
     return antonym
 
 
-num = int(input('enter the number of words-pairs: '))
+num = int(input('enter the number of word-pairs: '))
 word = input('enter the word to find the antonym for: ')
 words = dictionary(num)
 print(antonyms(words, word))
