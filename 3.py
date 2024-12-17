@@ -1,14 +1,15 @@
 def dictionary(n):
     dict = {}
     for i in range(n):
-        word_1, word_2 = input('enter the word and its antonym separated by a space: ').split()
-        dict[word_1] = word_2
-        dict[word_2] = word_1
+        wrd_1, wrd_2 = input('enter the word and its antonym separated by a space: ').split()
+        dict[wrd_1] = wrd_2
+        dict[wrd_2] = wrd_1
+    print(dict)
     return dict
 
 
 def antonyms(dct, wrd):
-    antonym = dct.get(wrd, wrd)    #get(key, value)
+    antonym = dct.get(wrd, wrd)    #get(key, value), so it's (key, what to return)
     return antonym
 
 

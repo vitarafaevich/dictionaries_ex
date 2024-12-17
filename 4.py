@@ -20,4 +20,3 @@ def getting_form(dct, wrd):
 number = int(input('enter the number of word-pairs: '))
 word = input('enter the subject you want to know the shape of: ')
 print(getting_form(dictionary(number), word))
-
